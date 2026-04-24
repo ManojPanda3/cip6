@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" preserveAspectRatio="xMidYMid slice">
+  <rect width="600" height="720" fill="#0F172A"/>
+  <circle cx="180" cy="200" r="110" fill="#FDE047"/>
+  <rect x="320" y="120" width="180" height="180" rx="28" fill="#F9A8D4"/>
+  <polygon points="140,560 280,360 420,560" fill="#67E8F9"/>
+  <circle cx="450" cy="520" r="70" fill="#FDE047"/>
+  <rect x="80" y="420" width="120" height="120" rx="24" fill="#F9A8D4"/>
+</svg>

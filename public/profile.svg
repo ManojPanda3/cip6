@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#67E8F9"/>
+  <circle cx="200" cy="160" r="70" fill="#FDE047" stroke="#0F172A" stroke-width="8"/>
+  <rect x="90" y="240" width="220" height="160" rx="110" fill="#F9A8D4" stroke="#0F172A" stroke-width="8"/>
+  <text x="200" y="380" font-family="Fredoka, sans-serif" font-size="28" text-anchor="middle" fill="#0F172A" font-weight="700">MP</text>
+</svg>
