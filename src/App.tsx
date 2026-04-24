@@ -4,7 +4,7 @@ import { WeekPage } from "./pages/WeekPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Lessons />} />
         <Route path="/week/:num" element={<WeekPage />} />

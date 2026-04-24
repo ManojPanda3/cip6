@@ -32,7 +32,7 @@ export function Lessons() {
             return (
               <Link
                 key={n}
-                to={`/week/${week.number}`}
+                to={`week/${week.number}`}
                 className="lesson-card"
                 aria-label={`Open week ${n}`}
               >
