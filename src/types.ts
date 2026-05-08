@@ -47,7 +47,7 @@ export type SlideLayout =
     bg: BgColor;
     paragraphs: string[]; // html allowed
     subheading?: string;
-    image: { src: string; alt?: string; style?: object; };
+    image: { src: string; alt?: string; };
   }
   | {
     kind: "qa";

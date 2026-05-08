@@ -755,7 +755,7 @@ export const week3: Week = {
             html: "<strong>Print</strong> their calculated weight on Mars.",
           },
         ],
-        image: { src: "https://images-assets.nasa.gov/image/PIA02653/PIA02653~large.jpg?w=240&h=240&fit=clip&crop=faces%2Cfocalpoint", alt: "Mars Rover", style: { objectFit: 'fit' } },
+        image: { src: "https://images-assets.nasa.gov/image/PIA02653/PIA02653~large.jpg?w=240&h=240&fit=clip&crop=faces%2Cfocalpoint", alt: "Mars Rover" },
       },
     },
     {

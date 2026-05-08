@@ -103,7 +103,7 @@ export function Slide({ slide, active }: Props) {
             ))}
           </div>
           <div className="image-box anim-right d-2">
-            <img src={l.image.src} alt={l.image.alt || ""} style={l.image.style || {}} />
+            <img src={l.image.src} alt={l.image.alt || ""} />
           </div>
         </>
       )}
