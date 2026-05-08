@@ -1,4 +1,4 @@
-export type BgColor = "yellow" | "cyan" | "pink" | "white";
+export type BgColor = "yellow" | "cyan" | "pink" | "white" | "orange" | "red" | "deepblue" | "indigo" | "softmagenta";
 
 export interface Tile {
   bg: BgColor;
@@ -16,46 +16,46 @@ export interface BulletItem {
 
 export type SlideLayout =
   | {
-      kind: "title";
-      accent?: string;
-      title: string;
-      subtitle?: string;
-    }
+    kind: "title";
+    accent?: string;
+    title: string;
+    subtitle?: string;
+  }
   | {
-      kind: "sectionTitle";
-      badge: string;
-      badgeColor?: BgColor;
-      title: string;
-      subtitle?: string;
-    }
+    kind: "sectionTitle";
+    badge: string;
+    badgeColor?: BgColor;
+    title: string;
+    subtitle?: string;
+  }
   | {
-      kind: "tiles";
-      title: string;
-      tiles: Tile[];
-    }
+    kind: "tiles";
+    title: string;
+    tiles: Tile[];
+  }
   | {
-      kind: "twoColumnBullets";
-      title: string;
-      bullets: BulletItem[];
-      image?: { src: string; round?: boolean; alt?: string };
-      imageLeft?: boolean;
-      heading?: string;
-    }
+    kind: "twoColumnBullets";
+    title: string;
+    bullets: BulletItem[];
+    image?: { src: string; round?: boolean; alt?: string; };
+    imageLeft?: boolean;
+    heading?: string;
+  }
   | {
-      kind: "bleedImage";
-      title: string;
-      bg: BgColor;
-      paragraphs: string[]; // html allowed
-      subheading?: string;
-      image: { src: string; alt?: string };
-    }
+    kind: "bleedImage";
+    title: string;
+    bg: BgColor;
+    paragraphs: string[]; // html allowed
+    subheading?: string;
+    image: { src: string; alt?: string; style?: object; };
+  }
   | {
-      kind: "qa";
-      title: string;
-      body: string;
-      note?: string;
-      contact?: string;
-    };
+    kind: "qa";
+    title: string;
+    body: string;
+    note?: string;
+    contact?: string;
+  };
 
 export interface SlideDef {
   id: string;
@@ -71,4 +71,5 @@ export interface Week {
   subtitle: string;
   author: string;
   slides: SlideDef[];
+  theme?: string;
 }

@@ -11,9 +11,8 @@ export function Slide({ slide, active }: Props) {
   const l = slide.layout;
   return (
     <div
-      className={`slide${active ? " active" : ""}${
-        l.kind === "bleedImage" ? " bleed" : ""
-      }`}
+      className={`slide${active ? " active" : ""}${l.kind === "bleedImage" ? " bleed" : ""
+        }`}
       data-title={slide.title}
       id={slide.id}
       style={l.kind === "bleedImage" ? { background: bg(l.bg) } : undefined}
@@ -104,7 +103,7 @@ export function Slide({ slide, active }: Props) {
             ))}
           </div>
           <div className="image-box anim-right d-2">
-            <img src={l.image.src} alt={l.image.alt || ""} />
+            <img src={l.image.src} alt={l.image.alt || ""} style={l.image.style || {}} />
           </div>
         </>
       )}
@@ -175,6 +174,11 @@ function bg(c: string) {
     cyan: "#67E8F9",
     pink: "#F9A8D4",
     white: "#FFFFFF",
+    orange: "#FB923C",
+    red: "#F87171",
+    deepblue: "#1E293B",
+    indigo: "#818CF8",
+    softmagenta: "#D946EF",
   };
   return map[c] || "#FFFFFF";
 }

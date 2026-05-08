@@ -245,7 +245,9 @@ export function Presentation({ week, initialSlider }: Props) {
   return (
     <div
       ref={appRef}
-      className={`presentation${presenting ? " presenting" : ""}`}
+      className={`presentation${presenting ? " presenting" : ""}${
+        week.theme ? ` theme-${week.theme}` : ""
+      }`}
       onClick={onBgClick}
       onWheel={onWheel}
       onPointerDown={onPointerDown}
@@ -253,6 +255,15 @@ export function Presentation({ week, initialSlider }: Props) {
       onPointerUp={onPointerUp}
       onPointerCancel={onPointerUp}
     >
+      {week.theme === "space" && (
+        <div className="space-decor">
+          <div className="planet earth-decor" />
+          <div className="planet mars-decor" />
+          <div className="astronaut-decor">
+            <i className="fa-solid fa-user-astronaut"></i>
+          </div>
+        </div>
+      )}
 
       <Link to="/" className="mini-btn ghost back-link">
         <i className="fa-solid fa-arrow-left"></i> Lessons
