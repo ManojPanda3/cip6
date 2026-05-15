@@ -1004,7 +1004,7 @@ export const week4: Week = {
         title: "Check In",
         bg: "cyan",
         paragraphs: [
-          "What’s your favorite sport or game to play/watch?",
+          "What’s your favorite game to play/watch?",
         ],
         image: { src: "/ice.svg", alt: "Check-in" },
       },
