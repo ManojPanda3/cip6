@@ -947,7 +947,359 @@ export const week3: Week = {
   ],
 };
 
-export const weeks: Week[] = [week1, week2, week3];
+export const week4: Week = {
+  slug: "week-4",
+  number: 4,
+  title: "Week Four Section",
+  subtitle: "Control Flow & Logic — High-Low",
+  author: "Cameron Mohne and Maggie Lee",
+  theme: "highlow",
+  slides: [
+    {
+      id: "w4-s1",
+      title: "Welcome",
+      section: "Intro",
+      layout: {
+        kind: "title",
+        accent: "LOGIC & CONTROL FLOW",
+        title: "Welcome to Section!<br/>Week 4",
+        subtitle: "High-Low | Code in Place 2026 | Slides by Cameron & Maggie",
+      },
+    },
+    {
+      id: "w4-s2",
+      title: "Agenda",
+      section: "Intro",
+      layout: {
+        kind: "tiles",
+        title: "Today's Agenda",
+        tiles: [
+          {
+            bg: "cyan",
+            icon: "fa-solid fa-clipboard-check",
+            title: "Check-in",
+            body: "How is everyone doing?",
+          },
+          {
+            bg: "yellow",
+            icon: "fa-solid fa-arrows-rotate",
+            title: "Recap",
+            body: "Reviewing logic, logical operators, & comparison operators!",
+          },
+          {
+            bg: "pink",
+            icon: "fa-solid fa-trophy",
+            title: "High-Low",
+            body: "Section Problem!",
+          },
+        ],
+      },
+    },
+    {
+      id: "w4-s3",
+      title: "Check-In",
+      section: "Intro",
+      layout: {
+        kind: "bleedImage",
+        title: "Check In",
+        bg: "cyan",
+        paragraphs: [
+          "What’s your favorite sport or game to play/watch?",
+        ],
+        image: { src: "/ice.svg", alt: "Check-in" },
+      },
+    },
+    {
+      id: "w4-s4",
+      title: "Questions?",
+      section: "Intro",
+      layout: {
+        kind: "qa",
+        title: "Questions?",
+        body: "Does anyone have any questions before we move on to the recap?",
+      },
+    },
+    {
+      id: "w4-s5",
+      title: "Recap",
+      section: "Recap",
+      layout: {
+        kind: "sectionTitle",
+        badge: "RECAP",
+        badgeColor: "pink",
+        title: "Logic Recap",
+        subtitle: "Reviewing what we've learned so far",
+      },
+    },
+    {
+      id: "w4-s6",
+      title: "If/Elif/Else Statements",
+      section: "Recap",
+      layout: {
+        kind: "twoColumnBullets",
+        title: "If/Elif/Else Statements",
+        heading: "As a quick reminder:",
+        bullets: [
+          {
+            icon: "fa-solid fa-check",
+            color: "cyan",
+            html: "<strong>If-Statements:</strong> take a condition and only runs a block of code if the condition evaluates to <code>True</code>.",
+          },
+          {
+            icon: "fa-solid fa-arrow-right-long",
+            color: "yellow",
+            html: "<strong>Elif-Statements:</strong> take a condition and only tests it if the prior If-Statement (and all prior Elif-Statements) evaluate to <code>False</code>.",
+          },
+          {
+            icon: "fa-solid fa-reply",
+            color: "pink",
+            html: "<strong>Else-Statements:</strong> take no condition and runs a block of code if the prior If-Statement (and Elif-Statements) evaluate to <code>False</code>.",
+          },
+        ],
+        image: { src: "https://images.unsplash.com/photo-1444491741275-3747c53c99b4?q=80&w=640", alt: "Fork in the road" },
+      },
+    },
+    {
+      id: "w4-s7",
+      title: "Comparison Operators",
+      section: "Recap",
+      layout: {
+        kind: "tiles",
+        title: "Comparison Operators",
+        tiles: [
+          {
+            bg: "cyan",
+            icon: "fa-solid fa-equals",
+            title: "==",
+            body: "Evaluates to <code>True</code> if both sides are equivalent.",
+          },
+          {
+            bg: "yellow",
+            icon: "fa-solid fa-greater-than",
+            title: ">",
+            body: "Evaluates to <code>True</code> if the left side is larger than the right.",
+          },
+          {
+            bg: "pink",
+            icon: "fa-solid fa-less-than",
+            title: "<",
+            body: "Evaluates to <code>True</code> if the left side is smaller than the right.",
+          },
+          {
+            bg: "white",
+            icon: "fa-solid fa-not-equal",
+            title: "!=",
+            body: "Evaluates to <code>True</code> if both sides are NOT equivalent.",
+          },
+        ],
+      },
+    },
+    {
+      id: "w4-s8",
+      title: "Logical Operators",
+      section: "Recap",
+      layout: {
+        kind: "tiles",
+        title: "Logical Operators",
+        tiles: [
+          {
+            bg: "cyan",
+            icon: "fa-solid fa-link",
+            title: "and",
+            body: "Only runs code if <strong>both</strong> conditions evaluate to <code>True</code>.",
+          },
+          {
+            bg: "yellow",
+            icon: "fa-solid fa-link-slash",
+            title: "or",
+            body: "Runs code if <strong>either</strong> condition evaluates to <code>True</code>.",
+          },
+          {
+            bg: "pink",
+            icon: "fa-solid fa-circle-xmark",
+            title: "not",
+            body: "Swaps the condition’s evaluation (<code>True</code> ↔ <code>False</code>).",
+          },
+        ],
+      },
+    },
+    {
+      id: "w4-s-random",
+      title: "Generating Numbers",
+      section: "Recap",
+      layout: {
+        kind: "tiles",
+        title: "Random Numbers",
+        tiles: [
+          {
+            bg: "cyan",
+            icon: "fa-solid fa-shuffle",
+            title: "random.randint(a, b)",
+            body: "Generates a random integer between <code>a</code> and <code>b</code> (inclusive).",
+            code: "import random\n\nnum = random.randint(1, 100)",
+          },
+          {
+            bg: "yellow",
+            icon: "fa-solid fa-file-import",
+            title: "The Import",
+            body: "Don't forget to <code>import random</code> at the top of your file to use it!",
+          },
+        ],
+      },
+    },
+    {
+      id: "w4-s9",
+      title: "Questions?",
+      section: "Recap",
+      layout: {
+        kind: "qa",
+        title: "Questions?",
+        body: "What questions do you have before we start the section problem?",
+      },
+    },
+    {
+      id: "w4-s10",
+      title: "High Low Section Problem",
+      section: "Problem",
+      layout: {
+        kind: "sectionTitle",
+        badge: "SECTION PROBLEM",
+        badgeColor: "yellow",
+        title: "High Low",
+        subtitle: "Let's build a game!",
+      },
+    },
+    {
+      id: "w4-s11",
+      title: "Setting Context",
+      section: "Problem",
+      layout: {
+        kind: "twoColumnBullets",
+        title: "Setting Context",
+        heading: "You are a game developer!",
+        bullets: [
+          {
+            icon: "fa-solid fa-dice",
+            color: "cyan",
+            html: "Two numbers are generated from 1 to 100.",
+          },
+          {
+            icon: "fa-solid fa-user-secret",
+            color: "yellow",
+            html: "You see your number, but the computer's number is hidden.",
+          },
+          {
+            icon: "fa-solid fa-comment-dots",
+            color: "pink",
+            html: "Guess if your number is <strong>higher</strong> or <strong>lower</strong>.",
+          },
+          {
+            icon: "fa-solid fa-star",
+            color: "cyan",
+            html: "If you're right, you get a point!",
+          },
+        ],
+        image: { src: "/blocks.svg", alt: "Game Dev" },
+      },
+    },
+    {
+      id: "w4-s12",
+      title: "Example Round",
+      section: "Problem",
+      layout: {
+        kind: "tiles",
+        title: "Example Round",
+        tiles: [
+          {
+            bg: "cyan",
+            icon: "fa-solid fa-user",
+            title: "Your Number",
+            body: "88",
+          },
+          {
+            bg: "yellow",
+            icon: "fa-solid fa-hand-pointer",
+            title: "Your Choice",
+            body: "higher",
+          },
+          {
+            bg: "pink",
+            icon: "fa-solid fa-robot",
+            title: "Computer's Number",
+            body: "35",
+          },
+          {
+            bg: "white",
+            icon: "fa-solid fa-check",
+            title: "Result",
+            body: "You Win!!",
+          },
+        ],
+      },
+    },
+    {
+      id: "w4-s13",
+      title: "Questions?",
+      section: "Problem",
+      layout: {
+        kind: "qa",
+        title: "Questions?",
+        body: "What questions do you have before we begin coding the problem?",
+      },
+    },
+    {
+      id: "w4-s14",
+      title: "Let's Code!",
+      section: "Problem",
+      layout: {
+        kind: "bleedImage",
+        title: "Let's Code!",
+        bg: "pink",
+        paragraphs: [
+          "Time to jump into the IDE and build High-Low!",
+        ],
+        image: { src: "/blocks.svg", alt: "Let's Code" },
+      },
+    },
+    {
+      id: "w4-s15",
+      title: "Extensions",
+      section: "Bonus",
+      layout: {
+        kind: "tiles",
+        title: "Extensions",
+        tiles: [
+          {
+            bg: "cyan",
+            icon: "fa-solid fa-shield-halved",
+            title: "Safeguard User Input",
+            body: "Ensure input can only be 'higher' or 'lower'.",
+          },
+          {
+            bg: "yellow",
+            icon: "fa-solid fa-message",
+            title: "Conditional Ending",
+            body: "Write different messages based on how many rounds were won.",
+          },
+        ],
+      },
+    },
+    {
+      id: "w4-s16",
+      title: "Wrap Up",
+      section: "Closing",
+      layout: {
+        kind: "qa",
+        title: "End of Section 4",
+        body: "Fantastic work on High-Low! You've mastered complex logic today.",
+        note: "Keep practicing those conditions. See you next week!",
+        contact: "Cameron Mohne & Maggie Lee | Code in Place 2026",
+      },
+    },
+  ],
+};
+
+export const weeks: Week[] = [week1, week2, week3, week4];
 
 export function getWeekBySlug(slug: string): Week | undefined {
   return weeks.find((w) => w.slug === slug);

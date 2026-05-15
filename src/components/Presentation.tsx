@@ -265,6 +265,17 @@ export function Presentation({ week, initialSlider }: Props) {
         </div>
       )}
 
+      {week.theme === "highlow" && (
+        <div className="highlow-decor">
+          <div className="high-arrow">
+            <i className="fa-solid fa-arrow-trend-up"></i>
+          </div>
+          <div className="low-arrow">
+            <i className="fa-solid fa-arrow-trend-down"></i>
+          </div>
+        </div>
+      )}
+
       <Link to="/" className="mini-btn ghost back-link">
         <i className="fa-solid fa-arrow-left"></i> Lessons
       </Link>
